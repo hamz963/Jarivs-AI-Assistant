@@ -1,0 +1,12 @@
+[package]
+name = "friday-diagnostics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+friday-core = { path = "../core" }
+friday-terminal = { path = "../terminal" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+thiserror = { workspace = true }

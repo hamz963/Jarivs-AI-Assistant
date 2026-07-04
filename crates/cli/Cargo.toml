@@ -1,0 +1,33 @@
+[package]
+name = "friday-cli"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "friday"
+path = "src/main.rs"
+
+[dependencies]
+friday-core = { path = "../core" }
+friday-llm = { path = "../llm" }
+friday-memory = { path = "../memory" }
+friday-plugins = { path = "../plugins" }
+friday-agents = { path = "../agents" }
+friday-desktop = { path = "../desktop" }
+friday-browser = { path = "../browser" }
+friday-voice = { path = "../voice" }
+friday-files = { path = "../files" }
+friday-refiner = { path = "../refiner" }
+friday-generator = { path = "../generator" }
+friday-terminal = { path = "../terminal" }
+friday-git = { path = "../git" }
+friday-diagnostics = { path = "../diagnostics" }
+friday-api = { path = "../api" }
+tokio = { workspace = true }
+serde = { workspace = true }
+serde_json = { workspace = true }
+zip = { workspace = true }
+html2md = { workspace = true }
+async-trait = "0.1"
+uuid = { workspace = true }
+tempfile = "3"

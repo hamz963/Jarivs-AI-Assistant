@@ -1,0 +1,16 @@
+[package]
+name = "friday-desktop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+friday-core = { path = "../core" }
+serde = { workspace = true }
+serde_json = { workspace = true }
+tracing = { workspace = true }
+enigo = { workspace = true }
+image = { workspace = true }
+thiserror = { workspace = true }
+
+[dev-dependencies]
+tempfile = "3"
